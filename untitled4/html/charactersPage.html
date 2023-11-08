@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../img-video/img-videoHome/logo-name.ico" rel="icon" type="image/x-icon">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Characters</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="../css/charactersCSS.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+
+<section class="navbarHome">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+         data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#welcome"><img class="imgLogo"
+                                                         src="../img-video/img-videoHome/marvelLogo.png"></a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="../html/homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/moviesPage.html">Movies and TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/charactersPage.html">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/PersonalityQuiz.html">Personality Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/testPage.html">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/new.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/buyPage.html">Buy Tickets</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-sm align-middle btn-outline-secondary" type="button"><a class="nav-link"
+                                                                                                   href="loginPage.html">
+                        Login </a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+
+<section>
+    <header class="bg-dark text-white text-center p-4">
+        <h2 style="font-weight: bolder">MARVEL CHARACTERS</h2>
+        <div class="filter-button-container">
+            <!--            <button class="filter-button button " id="filterButton">Filter</button>-->
+            <div class="filter-content" id="filterContent">
+                <button class="button" id="remove-filters-button " onclick="filterCards('all')">Remove Filters
+                </button>
+                <button class="button" id="show-comix-button button " onclick="filterCards('comix')">Show Comix
+                    Characters
+                </button>
+                <button class="button" id="show-movie-button button" onclick="filterCards('movie')">Show Movie
+                    Characters
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="card" data-category="movie">
+            <a href="https://spiderman-films.fandom.com/wiki/Spider-Man_(Tom_Holland)">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/tom2.jpg"
+                     id="original-image"
+                     src="../img-video/img-videoCharacters/tom.jpg">
+                <h4>Spider-Man (Tom Holland)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    Agile web-slinger balancing life as a student and a superhero in the Marvel Cinematic Universe.
+                </div>
+            </a>
+        </div>
+        <img alt="Hover Image" class="hover-image" id="hover-image">
+
+
+        <div class="card" data-category="movie">
+            <a href="https://en.wikipedia.org/wiki/Iron_Man">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/tony2.jpg"
+                     id="original-image2"
+                     src="../img-video/img-videoCharacters/tony.jpeg">
+                <h4>Tony Stark(Robert Downey Jr)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    Genius inventor, billionaire philanthropist, and key Avengers member with a high-tech suit.
+                </div>
+            </a>
+        </div>
+
+
+        <div class="card" data-category="comix">
+            <a href="https://spiderman.fandom.com/wiki/Spider-Man_Wiki">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/spidercomix2.jpg"
+                     id="original-image3"
+                     src="../img-video/img-videoCharacters/spycomix.jpg">
+                <h4>Spider-Man(Comix)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">In the comics, Spider-Man has faced alternate realities and challenges, from the dark
+                    "Spider-Verse" to "Miles Morales," offering diverse adventures for fans.
+                </div>
+            </a>
+        </div>
+
+        <div class="card" data-category="comix">
+            <a href="https://marvel.fandom.com/wiki/Anthony_Stark_(Earth-616)">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/tonycomix2.jpg"
+                     id="original-image4"
+                     src="../img-video/img-videoCharacters/tonycomic.jpg">
+                <h4>Tony Stark(Comix)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    Iron Man's comic variants explore alternate armor designs, time-travel exploits, and
+                    multidimensional encounters, adding depth to his legacy.
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="movie">
+            <a href="https://en.wikipedia.org/wiki/Doctor_Strange">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/strange2.jpg"
+                     id="original-image5"
+                     src="../img-video/img-videoCharacters/strange.jpg">
+                <h4>Dr. Strange(Benedict Cumberbatch)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    Neurosurgeon turned mystical sorcerer protecting the world with powerful magic.
+                </div>
+            </a>
+        </div>
+
+        <div class="card" data-category="comix">
+            <a href="https://marvel.fandom.com/wiki/Stephen_Strange_(Earth-616)">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/DrCom2.jpeg"
+                     id="original-image6"
+                     src="../img-video/img-videoCharacters/DrCom1.jpeg">
+                <h4>Dr. Strange(Comix)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    Dr. Strange's comics dive into mystical realms, revealing cosmic dimensions and alternate realities,
+                    showcasing his mastery of the mystic arts.
+                </div>
+            </a>
+        </div>
+
+        <div class="card" data-category="movie">
+            <a href="https://hulk.fandom.com/wiki/Hulk">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/hulk2.jpg"
+                     id="original-image7"
+                     src="../img-video/img-videoCharacters/hulk1.jpg">
+                <h4>Hulk</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    Dr. Bruce Banner's gamma radiation-transformed alter ego, the Hulk, wields immense strength,
+                    battling inner rage.
+                </div>
+            </a>
+        </div>
+
+        <div class="card" data-category="comix">
+            <a href="https://en.wikipedia.org/wiki/Hulk">
+                <img class="original-image" data-hover-src="../img-video/img-videoCharacters/bruce2.jpeg"
+                     id="original-image8"
+                     src="../img-video/img-videoCharacters/bruce1.jpg">
+                <h4>Hulk(Comix)</h4>
+                <div class="publishbyDate">
+
+                </div>
+                <div class="desc">
+                    The Hulk's comic variants delve into transformations, gamma-powered heroes, and alternate Hulk
+                    personas, each with distinct storylines and challenges.
+                </div>
+            </a>
+        </div>
+
+
+    </main>
+
+
+</section>
+
+<footer>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <img alt="" src="../img-video/img-videoHome/logo-name.ico">
+                    <p></p>
+                    <h3>©2023 MARVEL</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="#history">History of Marvel</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Characters</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <h2>Content</h2>
+                    <ul>
+                        <li><a href="#news">New</a></li>
+                        <li><a href="#movies">Movies and TV Shows</a></li>
+                        <li><a href="#">Comics</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+
+                    <h2>Follow Marvel</h2>
+                    <p class="socials">
+                        <a href="https://www.facebook.com/Marvel/"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="http://twitter.com/marvel"><i class='bx bxl-twitter'></i></a>
+                        <a href="http://instagram.com/marvel"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="http://marvelentertainment.tumblr.com"><i class='bx bxl-tumblr'></i></a>
+                        <a href="http://youtube.com/marvel"><i class='bx bxl-youtube'></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/charactersJS.js"></script>
+</body>
+</html>

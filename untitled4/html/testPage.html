@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../img-video/img-videoHome/logo-name.ico" rel="icon" type="image/x-icon">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Marvel Test</title>
+    <link href="../css/testCSS.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<section class="navbarHome">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+         data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#welcome"><img class="imgLogo"
+                                                         src="../img-video/img-videoHome/marvelLogo.png"></a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="../html/homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/moviesPage.html">Movies and TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/charactersPage.html">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/PersonalityQuiz.html">Personality Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/testPage.html">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/new.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/buyPage.html">Buy Tickets</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-sm align-middle btn-outline-secondary" type="button"><a class="nav-link"
+                                                                                                   href="loginPage.html">
+                        Login </a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+
+<section>
+    <header class="bg-dark text-white text-center p-4" id="website-header"><h2 style="font-weight: bolder">MARVEL
+        TEST</h2></header>
+    <video autoplay loop muted src="../img-video/img-videoTest/back2.mp4"></video>
+
+
+    <div class="container header-quiz">
+        <form id="quizForm">
+
+
+            <div class="start_btn">
+                <button>Start Test</button>
+            </div>
+
+
+            <div class="info_box">
+                <div class="info-title"><span>Some Rules of this Quiz</span></div>
+                <div class="info-list">
+                    <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                    <div class="info">2. Once you select your answer, it can't be undone.</div>
+                    <div class="info">3. You can't select any option once time goes off.</div>
+                    <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                    <div class="info">5. You'll get points on the basis of your correct answers.</div>
+                </div>
+                <div class="buttons">
+                    <button class="quit">Exit Quiz</button>
+                    <button class="restart">Continue</button>
+                </div>
+            </div>
+
+
+            <div class="quiz_box">
+                <header id="quiz-header">
+                    <div class="title">Marvel Test</div>
+                    <div class="timer">
+                        <div class="time_left_txt">Time Left</div>
+                        <div class="timer_sec">15</div>
+                    </div>
+                    <div class="time_line"></div>
+                </header>
+                <section>
+                    <div class="que_text">
+
+                    </div>
+                    <div class="option_list">
+
+                    </div>
+                </section>
+
+
+                <footer id="quiz-footer">
+                    <div class="total_que">
+
+                    </div>
+                    <button class="next_btn">Next Question</button>
+                </footer>
+            </div>
+
+
+            <div class="result_box">
+                <div class="icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="complete_text">You've completed the Quiz!</div>
+                <div class="score_text">
+                    <!-- Here I've inserted Score Result from JavaScript -->
+                </div>
+                <div class="buttons">
+                    <button class="restart">Replay Quiz</button>
+                    <button class="quit">Quit Quiz</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<footer id="website-footer">
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <img alt="" src="../img-video/img-videoHome/logo-name.ico">
+                    <p></p>
+                    <h3>©2023 MARVEL</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="../html/historyPage.html">History of Marvel</a></li>
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Characters</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <h2>Content</h2>
+                    <ul>
+                        <li><a href="../html/new.html">New</a></li>
+                        <li><a href="#">Movies and TV Shows</a></li>
+                        <li><a href="#">Comics</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+
+                    <h2>Follow Marvel</h2>
+                    <p class="socials">
+                        <a href="https://www.facebook.com/Marvel/"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="http://twitter.com/marvel"><i class='bx bxl-twitter'></i></a>
+                        <a href="http://instagram.com/marvel"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="http://marvelentertainment.tumblr.com"><i class='bx bxl-tumblr'></i></a>
+                        <a href="http://youtube.com/marvel"><i class='bx bxl-youtube'></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/quizJS.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/testJS.js"></script>
+
+</body>
+</html>

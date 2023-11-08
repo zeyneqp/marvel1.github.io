@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies and TV SHows</title>
+    <link rel="icon" href="../img-video/img-videoHome/logo-name.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/moviesCSS.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!--navBar-->
+<section class="navbarHome">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+         data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#welcome"><img src="../img-video/img-videoHome/marvelLogo.png"
+                                                         class="imgLogo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="../html/homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/moviesPage.html">Movies and TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/charactersPage.html">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/PersonalityQuiz.html">Personality Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/testPage.html">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/new.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/buyPage.html">Buy Tickets</a>
+                    </li>
+                    </button>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-sm align-middle btn-outline-secondary" type="button"><a href="loginPage.html"
+                                                                                                   class="nav-link">
+                        Login </a></button>
+                </form>
+
+                <!--Offcanvas btn-->
+                <button class="btn btn-sm align-middle btn-outline-secondary" id="offcanvasbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Chronology
+                </button>
+            </div>
+        </div>
+    </nav>
+
+</section>
+<!-- Header Section -->
+<header class="bg-dark text-white text-center p-4"><h2 style="font-weight: bolder">Marvel Movies and TV Shows</h2></header>
+
+<div class="home-box">
+    <h1 id="sorting">Movies and TV Shows</h1>
+    <div id="m" class="container mt-4">
+
+        <div class="row">
+            <!-- Movie 1 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/loki.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Loki</h5>
+                        <p class="card-text">Year: 2021</p>
+                        <div class="collapseCard" id="collapse1">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                        aria-controls="collapseWidthExample" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "Loki" is a Marvel Studios series on Disney+ that follows the God of Mischief,
+                                        Loki, after he creates
+                                        a new timeline. Captured by the Time Variance Authority (TVA), he's tasked with
+                                        fixing disruptions
+                                        in time, exploring themes of identity and free will while navigating through
+                                        various timelines and
+                                        realities.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/vanda.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">WandaVision</h5>
+                        <p class="card-text">Year: 2021</p>
+                        <div class="collapseCard" id="collapse2">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample2" aria-expanded="false"
+                                        aria-controls="collapseWidthExample2" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "WandaVision" is a Marvel Studios television series released on Disney+ in
+                                        January 2021. The show
+                                        revolves around Wanda Maximoff (Scarlet Witch) and Vision, played by Elizabeth
+                                        Olsen and Paul
+                                        Bettany, respectively. Set after the events of "Avengers: Endgame," the series
+                                        adopts a unique
+                                        sitcom-style format, paying homage to various eras of television while gradually.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Movie 3 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/groot.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">I Am Groot</h5>
+                        <p class="card-text">Year: 2022</p>
+                        <div class="collapseCard" id="collapse3">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample3" aria-expanded="false"
+                                        aria-controls="collapseWidthExample3" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "I Am Groot" is an upcoming series by Marvel Studios set to premiere on Disney+.
+                                        While precise
+                                        release details weren't available at the time of my last update in January 2022,
+                                        the show is
+                                        anticipated to center around Groot, the sentient tree-like character from the
+                                        Guardians of the
+                                        Galaxy.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/moon.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Moon Knight</h5>
+                        <p class="card-text">Year: 2022</p>
+                        <div class="collapseCard" id="collapse4">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample4" aria-expanded="false"
+                                        aria-controls="collapseWidthExample4" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "Moon Knight" is an upcoming Marvel Studios series on Disney+ featuring Marc
+                                        Spector, known as Moon
+                                        Knight. He grapples with dissociative identity disorder, embodying various
+                                        personas and gaining
+                                        powers from the Egyptian god Khonshu. The show will explore his complex
+                                        psychology, unique combat
+                                        skills, and darker, supernatural elements within the Marvel Cinematic.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Movie 5 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/avn1.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Avengers</h5>
+                        <p class="card-text">Year: 2012</p>
+                        <div class="collapseCard" id="collapse5">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample5" aria-expanded="false"
+                                        aria-controls="collapseWidthExample5" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample5">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "The Avengers" is a superhero film released in 2012, directed by Joss Whedon. It is based on the
+                                        Marvel Comics superhero team of the same name. The movie brings together iconic Marvel
+                                        characters including Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. These
+                                        superheroes join forces to combat the villain Loki, who seeks to conquer Earth .
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 6 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/avn222.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Avengers: Age of Ultron</h5>
+                        <p class="card-text">Year: 2015</p>
+                        <div class="collapseCard" id="collapse6">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample6" aria-expanded="false"
+                                        aria-controls="collapseWidthExample6" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample6">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "Avengers: Age of Ultron" is a superhero film released in 2015, directed by Joss Whedon as a
+                                        sequel to the original "Avengers" movie. It is part of the Marvel Cinematic Universe (MCU). The
+                                        story revolves around the Avengers—Iron Man, Captain America, Thor, Hulk, Black Widow, and
+                                        Hawkeye—as they work to stop an artificial intelligence named Ultron, created by Tony Stark.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Movie 7 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/avn3.jpg" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Avengers: Infinity War</h5>
+                        <p class="card-text">Year: 2018</p>
+                        <div class="collapseCard" id="collapse7">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample7" aria-expanded="false"
+                                        aria-controls="collapseWidthExample7" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample7">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "Avengers: Infinity War" is a superhero film released in 2018 and directed by Anthony and Joe Russo.
+                                        It is a significant installment in the Marvel Cinematic Universe (MCU). The movie follows the
+                                        Avengers, the Guardians of the Galaxy, and other Marvel superheroes as they face their most
+                                        formidable foe yet, Thanos. Thanos, a powerful being seeking to gather all six Infinity Stones. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 8 -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="../img-video/img-videoMovies/avn4.png" class="card-img-top" alt="Movie 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Avengers: Endgame</h5>
+                        <p class="card-text">Year: 2019</p>
+                        <div class="collapseCard" id="collapse8">
+                            <p>
+                                <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample8" aria-expanded="false"
+                                        aria-controls="collapseWidthExample8" style="color: white; background-color: #f0141e">
+                                    Learn more
+                                </button>
+                            </p>
+                            <div style="min-height: 120px; width: auto; max-height: 200px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample8">
+                                    <div class="card card-body" style="width: auto; min-height: 170px;">
+                                        "Avengers: Endgame" is a 2019 superhero film that concludes the Avengers' battle against the villain
+                                        Thanos. The story involves time travel as the remaining Avengers seek to undo the devastating
+                                        effects of Thanos' actions, leading to an epic final battle and a conclusion to the Avengers'
+                                        storyline in the Marvel Cinematic Universe.  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--Offcanvas-->
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Chronological order</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Captain America: The First Avenger (2011)</li>
+                <li class="list-group-item">Captain Marvel (2019)</li>
+                <li class="list-group-item">Iron Man (2008)</li>
+                <li class="list-group-item">Iron Man 2 (2010)</li>
+                <li class="list-group-item">Thor (2011)</li>
+
+                <li class="list-group-item">The Avengers (2012)</li>
+                <li class="list-group-item">Iron Man 3 (2013)</li>
+                <li class="list-group-item">Thor: The Dark World (2013)</li>
+                <li class="list-group-item">Captain America: The Winter Soldier (2014)</li>
+                <li class="list-group-item">Guardians of the Galaxy (2014)</li>
+
+                <li class="list-group-item">Guardians of the Galaxy Vol. 2 (2017)</li>
+                <li class="list-group-item">Avengers: Age of Ultron (2015)</li>
+                <li class="list-group-item">Ant-Man (2015)</li>
+                <li class="list-group-item">Captain America: Civil War (2016)</li>
+                <li class="list-group-item">Black Widow (2021)</li>
+
+                <li class="list-group-item">Black Panther (2018)</li>
+                <li class="list-group-item">Spider-Man: Homecoming (2017)</li>
+                <li class="list-group-item">Spider-Man: Far From Home (2019)</li>
+                <li class="list-group-item">Doctor Strange (2016)</li>
+                <li class="list-group-item">Thor: Ragnarok (2017)</li>
+
+                <li class="list-group-item">Ant-Man and the Wasp (2018)</li>
+                <li class="list-group-item">Avengers: Infinity War (2018)</li>
+                <li class="list-group-item">Avengers: Endgame (2019)</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!--footer-->
+
+<footer>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <img src="../img-video/img-videoHome/logo-name.ico" alt="">
+                    <p></p>
+                    <h3>©2023 MARVEL</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="../html/historyPage.html">History of Marvel</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Characters</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                    <h2>Content</h2>
+                    <ul>
+                        <li><a href="../html/new.html">New</a></li>
+                        <li><a href="../html/moviesPage.html">Movies and TV Shows</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+
+                    <h2>Follow Marvel</h2>
+                    <p class="socials">
+                        <a href="https://www.facebook.com/Marvel/"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="http://twitter.com/marvel"><i class='bx bxl-twitter'></i></a>
+                        <a href="http://instagram.com/marvel"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="http://marvelentertainment.tumblr.com"><i class='bx bxl-tumblr'></i></a>
+                        <a href="http://youtube.com/marvel"><i class='bx bxl-youtube'></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--Script-->
+<script src="../js/moviesJS.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap & jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

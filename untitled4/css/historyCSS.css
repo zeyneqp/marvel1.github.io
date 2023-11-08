@@ -1,0 +1,242 @@
+/* Add the following styles to your custom CSS file */
+*{
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section{
+    background: #040303;
+    padding: 10px;
+}
+.imgLogo{
+    position: relative;
+    width: 88.5px;
+    height: 35.5px;
+}
+
+.content{
+    color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+section .content{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .textBox{
+    position: relative;
+}
+.content .textBox h2{
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: 600;
+    word-spacing: 20px;
+    line-height: 100px;
+}
+.content .textBox h2 span{
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: 900;
+}
+.content .textBox p{
+    font-size: 20px;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+.content .textBox .small{
+    font-size: 15px;
+    word-spacing: 5px;
+
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 40px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.content .textBox a:hover{
+    background: transparent;
+    color: #fff;
+}
+.content-black{
+    color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+section .content-black{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-black .textBox-black{
+    position: relative;
+    max-width: 700px;
+}
+.content-black .textBox-black h2 {
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 600;
+    word-spacing: 20px;
+    line-height: 100px;
+    color: black;
+}
+.content-black .textBox-black p {
+    font-size: 15px;
+    word-spacing: 5px;
+    line-height: 25px;
+    color: black;
+}
+.content-black .textBox-black a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 40px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #000;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.content-black .textBox-black a:hover{
+    background: transparent;
+    color: #000;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer {
+    background: #2b3035;
+    padding: 40px 0;
+}
+.single-content {
+    text-align: center;
+    padding: 115px 0;
+}
+.single-box h3 {
+    font-size: 10px;
+    font-weight: 700;
+    color: #a5a1a1;
+}
+.single-box ul {
+    list-style: none;
+    padding: 0;
+}
+.single-box ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5;
+    font-weight: 100;
+}
+.single-box h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.socials i {
+    font-size: 18px;
+    margin-right: 15px;
+}
+@media (max-width: 767px) {
+    .single-box {
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .single-box {
+        margin-bottom: 50px;
+    }
+}
+.socials a {
+    color: #a5a1a1;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+.text-center{
+    background: #000;
+    color: #eaeaea;
+}
+
+
+/* Style the Jumbotron background and text */
+.jumbotron {
+    background-color: black;
+    color: #eaeaea;
+}
+
+/* Style the card background and text */
+.card {
+    background-color: darkred;
+    color: white;
+}
+button{
+    color: #eaeaea;
+}
+/* Style the button link color */
+.btn-link {
+    color: #eaeaea;
+}
+.btn-link:hover{
+    color: #000;
+}
+
+/* Style the images with a border color */
+.img-fluid {
+    border: 2px solid darkred;
+}
+
+/* Style the pagination */
+.pagination .page-link {
+    background-color: darkred;
+    color: white;
+    border: 1px solid darkred;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: black;
+    border: 1px solid darkred;
+}
+
+.pagination .page-link:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Style the alert box */
+.alert {
+    background-color: darkred;
+    color: white;
+}
+
+.close {
+    color: white;
+}

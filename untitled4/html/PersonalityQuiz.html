@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img-video/img-videoHome/logo-name.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/PersonalityCSS.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!--navBar-->
+<section class="navbarHome">
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#welcome"><img src="../img-video/img-videoHome/marvelLogo.png" class="imgLogo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a aria-current="page" class="nav-link" href="../html/homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/historyPage.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/moviesPage.html">Movies and TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/charactersPage.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../html/PersonalityQuiz.html">Personality Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/testPage.html">Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/new.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/buyPage.html">Buy Tickets</a>
+          </li>
+          </button>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-sm align-middle btn-outline-secondary" type="button"> <a href="loginPage.html" class="nav-link"> Login </a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+<header class="bg-dark text-white text-center p-4" ><h2 style="font-weight: bolder">Who are you from Marvel</h2></header>
+
+<!-- Quiz Section -->
+<section id="quiz" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="form-group">
+          <h4>Question 1:</h4>
+          <p>1. Which of the following superpowers is closest to you?</p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q1a1" name="q1" class="custom-control-input" value="q1a1">
+            <label class="custom-control-label" for="q1a1">Superpower</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q1a2" name="q1" class="custom-control-input" value="q1a2">
+            <label class="custom-control-label" for="q1a2">Telekinesis</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q1a3" name="q1" class="custom-control-input" value="q1a3">
+            <label class="custom-control-label" for="q1a3">Technogeny</label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="form-group">
+          <h4>Question 2:</h4>
+          <p>
+            2. Your clothing style is preferred:</p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q2a1" name="q2" class="custom-control-input" value="q2a1">
+            <label class="custom-control-label" for="q2a1">  Leather jacket and leather gloves
+             </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q2a2" name="q2" class="custom-control-input" value="q2a2">
+            <label class="custom-control-label" for="q2a2">  Suit with raincoat
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q2a3" name="q2" class="custom-control-input" value="q2a3">
+            <label class="custom-control-label" for="q2a3">Elegant suit and armor</label>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="form-group">
+          <h4>Question 3:</h4>
+          <p>3. Do you prefer:
+          </p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q3a1" name="q3" class="custom-control-input" value="q3a1">
+            <label class="custom-control-label" for="q3a1"> A lonely journey
+             </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q3a2" name="q3" class="custom-control-input" value="q3a2">
+            <label class="custom-control-label" for="q3a2"> Teamwork
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q3a3" name="q3" class="custom-control-input" value="q3a3">
+            <label class="custom-control-label" for="q3a3">The development of outstanding technology</label>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="form-group">
+          <h4>Question 4:</h4>
+          <p>
+            4. Your motivation:
+          </p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q4a1" name="q4" class="custom-control-input" value="q4a1">
+            <label class="custom-control-label" for="q4a1"> Protection of the powerless
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q4a2" name="q4" class="custom-control-input" value="q4a2">
+            <label class="custom-control-label" for="q4a2"> Protecting the entire planet
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q4a3" name="q4" class="custom-control-input" value="q4a3">
+            <label class="custom-control-label" for="q4a3">Promotion of science and technology</label>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="form-group">
+          <h4>Question 5:</h4>
+          <p>5. Which environment would you prefer for your adventures?
+
+          </p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q5a1" name="q5" class="custom-control-input" value="q5a1">
+            <label class="custom-control-label" for="q5a1"> City streets
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q5a2" name="q5" class="custom-control-input" value="q5a2">
+            <label class="custom-control-label" for="q5a2">  Space
+
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q5a3" name="q5" class="custom-control-input" value="q5a3">
+            <label class="custom-control-label" for="q5a3"> Secret laboratory</label>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="form-group">
+          <h4>Question 6:</h4>
+          <p>
+            6. Your moral position:
+          </p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q6a1" name="q6" class="custom-control-input" value="q6a1">
+            <label class="custom-control-label" for="q6a1"> Justice over everything
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q6a2" name="q6" class="custom-control-input" value="q6a1">
+            <label class="custom-control-label" for="q6a2"> Protection of the world from external threats
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q6a3" name="q6" class="custom-control-input" value="q6a1">
+            <label class="custom-control-label" for="q6a3">Freedom and innovation</label>
+          </div>
+        </div>
+        <!-- Question 7 -->
+        <div class="form-group">
+          <h4>Question 7:</h4>
+          <p> 7. Which words describe you best?
+          </p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q7a1" name="q7" class="custom-control-input" value="q7a1">
+            <label class="custom-control-label" for="q7a1"> Strong and uncontrollable
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q7a2" name="q7" class="custom-control-input" value="q7a2">
+            <label class="custom-control-label" for="q7a2"> Leader and defender
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q7a3" name="q7" class="custom-control-input" value="q7a3">
+            <label class="custom-control-label" for="q7a3">Brilliant and inventor</label>
+          </div>
+        </div>
+        <!-- Question 8 -->
+        <div class="form-group">
+          <h4>Question 8:</h4>
+          <p>
+            8. Your favorite weather:
+          </p>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q8a1" name="q8" class="custom-control-input" value="q8a1">
+            <label class="custom-control-label" for="q6a1"> Thunderstorm and lightning
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q8a2" name="q8" class="custom-control-input" value="q8a2">
+            <label class="custom-control-label" for="q8a2"> Starry sky
+            </label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="q8a3" name="q8" class="custom-control-input" value="q8a3">
+            <label class="custom-control-label" for="q8a3">Sun and technology</label>
+          </div>
+        </div>
+
+
+        <!-- Question 9 -->
+        <div class="form-group">
+          <h4>Question 9:</h4>
+          <p>
+       9. Which car would you choose?
+              </p>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9a1" name="q9" class="custom-control-input" value="q9a1">
+                <label class="custom-control-label" for="q9a1"> Truck
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9a2" name="q9" class="custom-control-input" value="q9a1">
+                <label class="custom-control-label" for="q9a2"> Spacecraft
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9a3" name="q9" class="custom-control-input" value="q9a1">
+                <label class="custom-control-label" for="q9a3"> Would you come up with your own car</label>
+              </div>
+            </div>
+
+
+            <!-- Submit Button -->
+        <button  class="btn btn-primary w-100" style="border-color: #f0141e; background: #f0141e">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Result Section -->
+<section id="result" class="container mt-5 d-none">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>Your Marvel Personality:</h2>
+      <p id="resultText"></p>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container" id="contact">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <img src="../img-video/img-videoHome/logo-name.ico" alt="">
+          <p></p>
+          <h3>©2023 MARVEL</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="#history">History of Marvel</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Characters</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Content</h2>
+          <ul>
+            <li><a href="#news">New</a></li>
+            <li><a href="#movies">Movies and TV Shows</a></li>
+            <li><a href="#">Comics</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <h2>Follow Marvel</h2>
+          <p class="socials">
+            <a href="https://www.facebook.com/Marvel/"><i class='bx bxl-facebook-square'></i></a>
+            <a href="http://twitter.com/marvel"><i class='bx bxl-twitter' ></i></a>
+            <a href="http://instagram.com/marvel"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="http://marvelentertainment.tumblr.com"><i class='bx bxl-tumblr' ></i></a>
+            <a href="http://youtube.com/marvel"><i class='bx bxl-youtube' ></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Bootstrap & jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/PersonalityJS.js"></script>
+</body>
+</html>

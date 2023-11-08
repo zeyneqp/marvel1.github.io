@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img-video/img-videoHome/logo-name.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Marvel Quiz</title>
+  <link rel="stylesheet" href="../css/quizCSS.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+</head>
+<body>
+
+
+<!--navBar-->
+
+<section class="navbarHome">
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../img-video/img-videoHome/marvelLogo.png" class="imgLogo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../html/homePage.html" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/historyPage.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/moviesPage.html" >Movies and TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/PersonalityQuiz.html">Personality Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../html/quizPage.html">Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/new.html" >News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/buyPage.html" >Buy Tickets</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-sm align-middle btn-outline-secondary" type="button"> <a href="loginPage.html" class="nav-link"> Login </a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</section>
+
+
+<!--сюда напишите свой основной код страницы !!!!-->
+
+<header class="bg-dark text-white text-center p-4" ><h2 style="font-weight: bolder">Marvel Test</h2></header>
+
+<div class="container header-quiz" >
+  <form id="quizForm">
+
+    <div class="form-group">
+      <label for="q1">Question 1: How many Infinity Stones are there?</label>
+      <input type="text" class="form-control" id="q1" name="q1" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q2">Question 2:  Where is Captain America from?</label>
+      <input type="text" class="form-control" id="q2" name="q2" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q3">Question 3: Who is Tony Stark’s father?</label>
+      <input type="text" class="form-control" id="q3" name="q3" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q4">Question 4: Who is known as the 'God of Thunder' in the Marvel Universe?"</label>
+      <input type="text" class="form-control" id="q4" name="q4" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q5">Question 5: Which superhero has a shield made of vibranium?</label>
+      <input type="text" class="form-control" id="q5" name="q5" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q6">Question 6: What is the real name of Deadpool?</label>
+      <input type="text" class="form-control" id="q6" name="q6" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q7">Question 7:  Black Panther is set in which fictional country?</label>
+      <input type="text" class="form-control" id="q7" name="q7" required>
+    </div>
+
+    <div class="form-group">
+      <label for="q8">Question 8: What does Doctor Strange call his cape?</label>
+      <input type="text" class="form-control" id="q8" name="q8" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="background: #f0141e; border-color: #f0141e">Submit</button>
+  </form>
+</div>
+
+
+<!-- Result Section -->
+<section id="result" class="container mt-5 d-none">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>Quiz Result</h2>
+      <div id="promoCode" class="alert alert-success" style="background: #f88c91; border-color: #f88c91; color: #040303; "></div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container" id="contact">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <img src="../img-video/img-videoHome/logo-name.ico" alt="">
+          <p></p>
+          <h3>©2023 MARVEL</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="../html/historyPage.html">History of Marvel</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Characters</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Content</h2>
+          <ul>
+            <li><a href="../html/new.html">New</a></li>
+            <li><a href="#">Movies and TV Shows</a></li>
+            <li><a href="#">Comics</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <h2>Follow Marvel</h2>
+          <p class="socials">
+            <a href="https://www.facebook.com/Marvel/"><i class='bx bxl-facebook-square'></i></a>
+            <a href="http://twitter.com/marvel"><i class='bx bxl-twitter' ></i></a>
+            <a href="http://instagram.com/marvel"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="http://marvelentertainment.tumblr.com"><i class='bx bxl-tumblr' ></i></a>
+            <a href="http://youtube.com/marvel"><i class='bx bxl-youtube' ></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/quizJS.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

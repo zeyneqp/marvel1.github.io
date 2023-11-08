@@ -1,0 +1,137 @@
+
+* {
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    background: #a5a1a1;
+}
+
+.imgLogo {
+    position: relative;
+    width: 88.5px;
+    height: 35.5px;
+}
+
+.containerx {
+    width: 100%;
+    height: 100vh;
+    background-color: #999999;
+    /*background-image: linear-gradient(rgb(30,0,50,0.8),rgb(30,0,50,0.8)),url("../img-video/img-videoLog/marvel_background.jpg");*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.card {
+
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    text-align: center;
+}
+
+.card-body h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #f0141e;
+    position: relative;
+}
+
+.card-body {
+    height: 470px;
+}
+
+.card-body h1::after {
+    font-weight: bolder;
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #f0141e;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field {
+
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    width: 70%;
+}
+
+input {
+    font-weight: bolder;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #f0141e;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#loginBtn,
+#signupBtn {
+    padding: 6px;
+}
+
+.btn-field {
+    font-weight: bolder;
+    flex-basis: 48%;
+    background: #f0141e;
+    color: #fff;
+    border-radius: 20px;
+}
+
+button {
+    justify-content: space-between;
+}
+
+.input-group {
+    height: 250px;
+    justify-content: center;
+}
+
+.btn-field button.disable {
+    background: #eaeaea;
+    color: #555;
+}

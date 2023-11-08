@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Tickets</title>
+  <link rel="icon" href="../img-video/img-videoHome/logo-name.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/buyCSS.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<!--navBar-->
+<section class="navbarHome">
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#welcome"><img src="../img-video/img-videoHome/marvelLogo.png" class="imgLogo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a aria-current="page" class="nav-link" href="../html/homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/historyPage.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/moviesPage.html">Movies and TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/charactersPage.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/PersonalityQuiz.html">Personality Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/testPage.html">Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/new.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../html/buyPage.html">Buy Tickets</a>
+          </li>
+          </button>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-sm align-middle btn-outline-secondary" type="button"> <a href="loginPage.html" class="nav-link"> Login </a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</section>
+<!-- Header Section -->
+<header class="bg-dark text-white text-center p-4" ><h2 style="font-weight: bolder">Buy Tickets</h2></header>
+
+
+<!-- Ticket Selection Section -->
+<section id="ticket-selection" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>Select Your Tickets</h2>
+      <form id="ticketSelectionForm">
+        <div class="form-group">
+          <label for="ticketType">Ticket Type:</label>
+          <select class="form-control" id="ticketType" required>
+            <option value="">Select Ticket Type</option>
+            <option value="general">General Admission</option>
+            <option value="vip">VIP</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" class="form-control" id="quantity" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="promoCode">Promo Code:</label>
+          <input type="text" class="form-control" id="promoCode" placeholder="Enter promo code">
+        </div>
+        <button type="submit" class="btn btn-primary w-100" style="background: #f0141e; border-color: #f0141e">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!--первое новое bootstrap Уведомления-->
+<div class="alert alert-dark alert-dismissible" role="alert" style="margin: 50px">
+  <strong>OMG!</strong>
+  If you pass the <a href="../html/testPage.html" class="alert-link">Test</a> , you can get a promo code for a discount
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+</div>
+
+
+<!--footer-->
+
+<footer>
+  <div class="container" id="contact">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <img src="../img-video/img-videoHome/logo-name.ico" alt="">
+          <p></p>
+          <h3>©2023 MARVEL</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="#history">History of Marvel</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Characters</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Content</h2>
+          <ul>
+            <li><a href="#news">New</a></li>
+            <li><a href="#movies">Movies and TV Shows</a></li>
+            <li><a href="#">Comics</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <h2>Follow Marvel</h2>
+          <p class="socials">
+            <a href="https://www.facebook.com/Marvel/"><i class='bx bxl-facebook-square'></i></a>
+            <a href="http://twitter.com/marvel"><i class='bx bxl-twitter' ></i></a>
+            <a href="http://instagram.com/marvel"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="http://marvelentertainment.tumblr.com"><i class='bx bxl-tumblr' ></i></a>
+            <a href="http://youtube.com/marvel"><i class='bx bxl-youtube' ></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--Script-->
+<script src="../js/buyJS.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap & jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
